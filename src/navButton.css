@@ -1,0 +1,18 @@
+.navButton-div{
+  background-color: red;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.nav-button {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-button:hover {
+  color: #00aaff;
+  text-decoration: underline;
+}
