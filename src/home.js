@@ -6,13 +6,16 @@ const Home = () => {
   return (
     <div className="home-container">
 
-      <nav className="navbar">
+      {/* <nav className="navbar">
         <ul className="nav-links">
-          <li><NavButton href="#home" name="home"></NavButton></li>
-          <li><NavButton href="#projects" name="projects"></NavButton></li>
-          <li><NavButton href="#about" name="about"></NavButton></li>
+          <li><NavButton href="/" name="home" /></li>
+          <li><NavButton href="/projects" name="projects" /></li>
+          <li><NavButton href="/about" name="about" /></li>
         </ul>
-      </nav>
+      </nav> */}
+      
+      
+
 
       <header className="home-header">
         <h1>Hello, I'm Gabriel Gomes</h1>
