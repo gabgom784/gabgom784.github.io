@@ -1,0 +1,19 @@
+.ProjectBar-div {
+  border: 2px solid red; /* This is for the border */
+  border-radius: 10px;   /* Optional: smooth rounded corners */
+  padding: 20px;         /* Space inside the box */
+  margin-bottom: 20px;   /* Space between project bars */
+  margin-top: 20px;
+  display: flex;         /* Keep text and image aligned horizontally */
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; /* Optional: background behind text */
+}
+
+.LeftHandSide {
+    display: block;
+}
+
+.rightHandSide {
+    display: block;
+}
