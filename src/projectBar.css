@@ -1,14 +1,24 @@
 .ProjectBar-div {
-  border: 2px solid red; /* This is for the border */
-  border-radius: 10px;   /* Optional: smooth rounded corners */
-  padding: 20px;         /* Space inside the box */
-  margin-bottom: 20px;   /* Space between project bars */
-  margin-top: 20px;
-  display: flex;         /* Keep text and image aligned horizontally */
+  border: 4px solid red; 
+  border-radius: 20px;   
+  padding: 20px;        
+  margin-bottom: 30px;   
+  margin-top: 30px;
+  display: flex;         
   justify-content: space-between;
   align-items: center;
-  background-color: white; /* Optional: background behind text */
+  background-color: white; 
+  margin-left: 80px;
+  margin-right: 80px;
+  transition: transform 0.3s ease, box-shadow 0.6s ease;
 }
+
+.ProjectBar-div:hover{
+    transform: scale(1.08);
+    box-shadow: 0 0 35px 8px rgba(255, 70, 70, 0.85);
+}
+
+
 
 .LeftHandSide {
     display: block;
@@ -16,4 +26,37 @@
 
 .rightHandSide {
     display: block;
+}
+
+.TitleAndType{
+    display: flex;
+    flex-direction: row;
+    gap: 80px; 
+}
+
+.ProjectTitleDiv{
+    background-color: rgb(234, 181, 59);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.ProjectTitleDiv:hover{
+    transform: scale(1.08)
+}
+
+.ProjectTypeDiv {
+    background-color: rgb(161, 182, 210);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.ProjectTypeDiv:hover{
+    transform: scale(1.08)
+}
+
+.project-image {
+  width: 250px;       
+  height: 250px;      
+  object-fit: cover;  
+  display: block; 
 }

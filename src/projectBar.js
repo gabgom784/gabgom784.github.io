@@ -2,10 +2,13 @@ import React from 'react';
 import "./projectBar.css";
 
 
-const ProjectBar = ({title, paragraph, image}) => {
+const ProjectBar = ({title, type, paragraph, image}) => {
     return <div className = "ProjectBar-div">
         <div className="LeftHandSide">
-            <h3>{title}</h3>
+            <div className="TitleAndType">
+                <div className="ProjectTitleDiv"><h3>{title}</h3></div>
+                <div className="ProjectTypeDiv"><h4>{type}</h4></div>
+            </div>
             <p>{paragraph}</p>
         </div>
         <div className="RightHandSide">

@@ -1,11 +1,12 @@
 .navButton-div{
   background-color: red;
-  padding: 20px;
+  padding: 15px;
   border-radius: 12px;
-  width: 60px;
-  margin-left: 10px;
-  margin-right: 10px;
-  align-items: center;
+  width: auto;        /* ✅ allow dynamic width */
+  min-width: 60px;
+  gap: 15px;
+  justify-content: center;
+  white-space: nowrap; /* Don't wrap the space */
 }
 
 .navButton-div:hover{
@@ -45,6 +46,7 @@
   font-size: 18px;
   font-weight: 500;
   transition: 0.3s ease;
+  justify-content: center;
 }
 
 .nav-button:hover {
