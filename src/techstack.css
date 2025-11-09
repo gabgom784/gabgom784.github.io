@@ -1,0 +1,15 @@
+.MainTechStackDiv{
+    background-color: black;
+}
+
+.TechSearchBar {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  margin: 20px 0 40px 0;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
