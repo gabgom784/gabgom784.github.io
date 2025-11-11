@@ -7,7 +7,7 @@ const widthMap = {
     advanced: "75%"
 }; 
 
-const TechBar = ({technology, experience_level}) => {
+const TechBar = ({technology, experience_level, type}) => {
     const barWidth = widthMap[experience_level] || "50%";
 
     return(

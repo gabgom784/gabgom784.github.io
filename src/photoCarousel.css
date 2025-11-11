@@ -1,0 +1,38 @@
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #111;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 30px;
+  animation: scroll 15s linear infinite;
+}
+
+.carousel-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff5555;
+  box-shadow: 0 0 10px rgba(255, 100, 100, 0.7);
+  transition: transform 0.3s ease;
+}
+
+.carousel-photo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 100, 100, 1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
+}

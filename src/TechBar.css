@@ -6,6 +6,12 @@
     border-bottom-right-radius: 40px;
     border-top-right-radius: 40px;
     background: linear-gradient(90deg, #4b0000, #a30000, #ff6600, #ffd700);
+    color: white;
 }
+
+.TechBarContainer:hover{
+    transform: scale(1.08);
+}
+
 
 

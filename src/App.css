@@ -45,6 +45,7 @@
   background-color: black;
   padding: 15px 0;
   z-index: 1000;
+  border-bottom: 10px white;
 }
 
 .nav-links {

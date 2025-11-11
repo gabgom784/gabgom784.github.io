@@ -2,3 +2,27 @@
     background-color: rgb(60, 55, 55);
     height: 100%;
 }
+
+.ProjectSearchBar {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  margin: 20px 0 40px 0;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.ProjectTypeFilter {
+  background-color: #2a2a2a;
+  color: white;
+  border: 1px solid #ff5555;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import './home.css'; // We'll add some styles
 import NavButton from './navButton';
+import PhotoCarousel from './photoCarousel';
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
           Take a look around and feel free to reach out via the contact section.
         </p>
       </section>
+      <PhotoCarousel></PhotoCarousel>;
     </div>
   );
 };
