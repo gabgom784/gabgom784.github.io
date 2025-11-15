@@ -3,12 +3,12 @@ import TechBar from "./TechBar";
 import "./techstack.css";
 
 const technologies = [
-  { technology: "HTML", experience_level: "beginner", type: "frontend"},
-  { technology: "CSS", experience_level: "intermediate", type: "frontend"},
-  { technology: "JavaScript", experience_level: "advanced", type: "frontend"},
-  { technology: "PostGreSQL", experience_level: "intermediate", type:"database"},
-  { technology: "Python", experience_level: "advanced", type:"backend"},
-  { technology: "Tableu", experience_level: "beginner", type: "database"}
+  { technology: "HTML", experience_level: "beginner", type: "frontend", image:"./pictures/skill_pictures/HTML_Logo.png"},
+  { technology: "CSS", experience_level: "intermediate", type: "frontend", image:"./pictures/skill_pictures/CSS_Logo.png"},
+  { technology: "JavaScript", experience_level: "advanced", type: "frontend", image:"./pictures/skill_pictures/JavaScript_Logo.png"},
+  { technology: "PostGreSQL", experience_level: "intermediate", type:"database", image:"./pictures/skill_pictures/PostGreSQL_Logo.png"},
+  { technology: "Python", experience_level: "advanced", type:"backend", image:"./pictures/skill_pictures/Python_Logo.png"},
+  { technology: "Tableu", experience_level: "beginner", type: "database", image:"./pictures/skill_pictures/Tableau_Logo.png"}
 ];
 
 export default function TechStack() {
@@ -60,7 +60,7 @@ export default function TechStack() {
       </div>
 
       {filteredTech.map((tech, index) => (
-        <TechBar key={index} technology={tech.technology} experience_level={tech.experience_level}/>
+        <TechBar key={index} technology={tech.technology} experience_level={tech.experience_level} image={tech.image}/>
       ))}
     </div>
   );

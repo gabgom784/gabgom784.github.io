@@ -21,15 +21,16 @@ const Home = () => {
       <header className="home-header">
         <h1>Hello, I'm Gabriel Gomes</h1>
         <p>Software Engineer | Data Enthusiast | Problem Solver</p>
+        <p>I am currently a Masters in Computer Science student at UC Irvine. Through extensive coursework, projects, and internships, 
+          I have developed a profound skillset in software engineering, data science, and machine learning. I love solving real-world problems and
+          learning new technologies!
+        </p>
+        <p>If you want to learn more about the work I do and my experience, please check out my projects and tech stack.</p>
         <a href="#projects" className="home-btn">View My Projects</a>
       </header>
       <section className="home-intro">
-        <p>
-          Welcome to my portfolio! Here you'll find my projects, skills, and experiences.
-          Take a look around and feel free to reach out via the contact section.
-        </p>
       </section>
-      <PhotoCarousel></PhotoCarousel>;
+      <PhotoCarousel></PhotoCarousel>
     </div>
   );
 };

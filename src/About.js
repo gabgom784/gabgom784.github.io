@@ -1,14 +1,55 @@
 import QuestionBox from './questionBox';
+import SocialMediaBar from './SocialMediaBar';
+import HobbyBar from './HobbyBar';
+import "./About.css";
+
+const social_medias = [
+  {platform: "Gomesgd@uci.edu", value: "mailto:gomesgd@uci.edu", image:"./pictures/social_media_pictures/email_logo.png"},
+  {platform: "LinkedIN", value: "https://www.linkedin.com/in/gabrielgomes03/", image:"./pictures/social_media_pictures/LinkedIn_Logo.png"},
+  {platform: "Instagram", value: "https://www.instagram.com/gabgom784/?hl=am-et", image:"./pictures/social_media_pictures/Instagram_Logo.png"},
+  {platform: "GitHub", value: "https://github.com/gabgom784", image:"./pictures/social_media_pictures/github_logo.png"}
+]
+
+const hobbies = [
+  {hobby: "Star Wars", image:"./pictures/hobby_pictures/Star_Wars.jpg"},
+  {hobby: "Working Out", image: "./pictures/hobby_pictures/gym.jpg"},
+  {hobby: "Gardening", image: "./pictures/hobby_pictures/gardening.jpg"},
+  {hobby: "Try out new Restaurants", image: "./pictures/hobby_pictures/restaurant.jpg"},
+  {hobby: "Reading", image: "./pictures/hobby_pictures/sunrise_book.jpg"},
+  {hobby: "Gaming", image: "./pictures/hobby_pictures/minecraft.jpg"},
+  {hobby: "Cooking", image: "./pictures/hobby_pictures/cooking.jpg"},
+  {hobby: "Travelling", image: "./pictures/hobby_pictures/travelling.JPG"},
+  {hobby: "Pillbug Terrariums", image: "./pictures/hobby_pictures/rolly_polly_terrarium.JPG"}
+]
 
 export default function About() {
   return (
-    <div>
+    <div class="MainAboutDiv">
       <h1>About Me</h1>
       <p>Hi, I'm Gabriel Gomes, a software engineer passionate about building impactful solutions.</p>
       <p>Feel free to explore my portfolio to learn more about my projects and skills.</p>
       <QuestionBox question="So where did I study?"></QuestionBox>
-      <QuestionBox question="So what do I like to do?"></QuestionBox>
+
+      <div className="AllHobbiesDiv">
+        <QuestionBox question="Do you have any hobbies?"></QuestionBox>
+        <div className="Hobbies">
+          {hobbies.map((hobby, index) => (
+            <HobbyBar key={index} hobby={hobby.hobby} image={hobby.image}/>
+          ))}
+        </div>
+      </div>
+
       <QuestionBox question="What is my favorite food?"></QuestionBox>
+
+      <div className="ContactInfoDiv">
+        <QuestionBox question="How can I contact you?"></QuestionBox>
+        <p>You can reach me through a variety of ways! Check them out below!</p>
+        <div className="SocialMedias">
+          {social_medias.map((social_media, index) => (
+                      <SocialMediaBar key={index} platform={social_media.platform} value={social_media.value} image={social_media.image}/>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

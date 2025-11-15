@@ -1,0 +1,19 @@
+.SocialMediaBar{
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 80%;
+    border: 3px solid orange;
+}
+
+.SocialMediaBar:hover{
+    transform: scale(1.08);
+    box-shadow: 0 0 35px 8px rgba(235, 120, 13, 0.85);
+}
+
+.SocialMediaBar img {
+  width: 50px;        
+  height: 50px;      
+  margin-left: 15px;
+  object-fit: contain;
+}

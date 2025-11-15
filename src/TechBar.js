@@ -7,12 +7,13 @@ const widthMap = {
     advanced: "75%"
 }; 
 
-const TechBar = ({technology, experience_level, type}) => {
+const TechBar = ({technology, experience_level, type, image}) => {
     const barWidth = widthMap[experience_level] || "50%";
 
     return(
         <div className="TechBarContainer" style={{width: barWidth}}>
             <h2>{technology}</h2>
+            <img src={image}></img>
         </div>
     )
 }
