@@ -1,6 +1,7 @@
 import QuestionBox from './questionBox';
 import SocialMediaBar from './SocialMediaBar';
 import HobbyBar from './HobbyBar';
+import EducationBar from './EducationBar';
 import "./About.css";
 
 const social_medias = [
@@ -22,13 +23,26 @@ const hobbies = [
   {hobby: "Pillbug Terrariums", image: "./pictures/hobby_pictures/rolly_polly_terrarium.JPG"}
 ]
 
+const educations = [
+  {school: "University of California, Irvine", dates: "September 2025 - Present", major: "Masters in Computer Science", image:"./pictures/education_pictures/UC_Irvine_Logo.png", fit:"contain"},
+  {school: "University of California, Berkeley", dates: "August 2021 - May 2025", major: "Electrical Engineering and Computer Science", minor: "Data Science", image: "./pictures/education_pictures/berkeley_Logo.png", fit:"contain"},
+  {school: "John F. Kennedy High School", dates: "August 2017 - May 2021", image: "./pictures/education_pictures/jfk_highschool.jpeg", fit:"cover"}
+]
+
 export default function About() {
   return (
     <div class="MainAboutDiv">
       <h1>About Me</h1>
       <p>Hi, I'm Gabriel Gomes, a software engineer passionate about building impactful solutions.</p>
       <p>Feel free to explore my portfolio to learn more about my projects and skills.</p>
-      <QuestionBox question="So where did I study?"></QuestionBox>
+      <div className="AllEducationsDiv">
+        <QuestionBox question="So where did I study?"></QuestionBox>
+        <div className="Educations">
+          {educations.map((education, index) => (
+            <EducationBar key={index} school={education.school} dates={education.dates} major={education.major} minor={education.minor} image={education.image} fit={education.fit}/>
+          ))}
+        </div>
+      </div>
 
       <div className="AllHobbiesDiv">
         <QuestionBox question="Do you have any hobbies?"></QuestionBox>
@@ -38,8 +52,6 @@ export default function About() {
           ))}
         </div>
       </div>
-
-      <QuestionBox question="What is my favorite food?"></QuestionBox>
 
       <div className="ContactInfoDiv">
         <QuestionBox question="How can I contact you?"></QuestionBox>
