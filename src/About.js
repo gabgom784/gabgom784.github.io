@@ -25,7 +25,7 @@ const hobbies = [
 
 const educations = [
   {school: "University of California, Irvine", dates: "September 2025 - Present", major: "Masters in Computer Science", image:"./pictures/education_pictures/UC_Irvine_Logo.png", fit:"contain"},
-  {school: "University of California, Berkeley", dates: "August 2021 - May 2025", major: "Electrical Engineering and Computer Science", minor: "Data Science", image: "./pictures/education_pictures/berkeley_Logo.png", fit:"contain"},
+  {school: "University of California, Berkeley", dates: "August 2021 - May 2025", major: "Electrical Engineering and Computer Science", minor: "Data Science", image: "./pictures/education_pictures/berkeley_logo.png", fit:"contain"},
   {school: "John F. Kennedy High School", dates: "August 2017 - May 2021", image: "./pictures/education_pictures/jfk_highschool.jpeg", fit:"cover"}
 ]
 
