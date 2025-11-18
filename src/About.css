@@ -5,26 +5,37 @@
 }
 
 .ContactInfoDiv{
-    width: 60%;
-    margin-left: 20%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.ContactInfoDiv h3 {
+  text-align: center;
 }
 
 .SocialMedias {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    margin: 10%;
+    margin-left: 10%;
 }
 
 .AllHobbiesDiv{
-    width: 60%;
-    margin-left: 20%;
+    width: 80%;
+    margin-left: 10%;
 }
 
 .Hobbies {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin: 10%;
+    gap: 50px;
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.AllEducationsDiv{
+    width: 80%;
+    margin-left: 10%;
 }
 

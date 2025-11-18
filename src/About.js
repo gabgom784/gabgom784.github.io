@@ -33,8 +33,7 @@ export default function About() {
   return (
     <div class="MainAboutDiv">
       <h1>About Me</h1>
-      <p>Hi, I'm Gabriel Gomes, a software engineer passionate about building impactful solutions.</p>
-      <p>Feel free to explore my portfolio to learn more about my projects and skills.</p>
+      
       <div className="AllEducationsDiv">
         <QuestionBox question="So where did I study?"></QuestionBox>
         <div className="Educations">
@@ -55,7 +54,7 @@ export default function About() {
 
       <div className="ContactInfoDiv">
         <QuestionBox question="How can I contact you?"></QuestionBox>
-        <p>You can reach me through a variety of ways! Check them out below!</p>
+        <h3>You can reach me through a variety of ways! Check them out below!</h3>
         <div className="SocialMedias">
           {social_medias.map((social_media, index) => (
                       <SocialMediaBar key={index} platform={social_media.platform} value={social_media.value} image={social_media.image}/>

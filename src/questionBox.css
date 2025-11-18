@@ -1,8 +1,7 @@
 .QuestionBox{
     display: flex;
-    background-color: aqua;
     justify-content: center;
-    
+    background: linear-gradient(90deg, #04113d, blue, aqua, white);
     padding: 20px;
     border-radius: 20px;
     font-size: 35px;

@@ -5,14 +5,22 @@
     border-radius: 20px;
 }
 
+.MainEducationDiv:hover{
+    scale: 1.08;
+    box-shadow: 0 0 35px 8px rgba(226, 222, 222, 0.85);
+}
+
 .MainEducationDiv img {
   width: 170px;        
   height: 170px;      
   margin-left: 15px;
 }
 
-.EducationInfoDev {
+.EducationInfoDiv {
   display: column;
   color: white;
 }
 
+.EducationInfoDiv h2{
+    color: gold;
+}

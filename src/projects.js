@@ -3,6 +3,8 @@ import ProjectBar from "./projectBar";
 import "./projects.css";
 
 const projects = [
+    {title:"My Own Personal Website", type:"Software Engineering", paragraph: `This is a personal website that I built in order for others to learn more about me! I used React to create
+      the website as it allowed me to create interactive and reusable components, which I further styled myself using advanced CSS techniques. Please look around to get to know more about me!`, image:"./pictures/project_pictures/personal_website.png"},
     {title:"Crocodile Predictions", type:"Machine Learning", paragraph:"This is a machine learning project about crocodiles", image:"/pictures/Crocodilia_montage.jpg"},
     {title:"Youtube Analytics Dashboard", type:"Data Science", paragraph:"This is a project that I started in which one can input a youtuber of their interest and see the statistics about them. Utilizes the Youtuber API in order to gather the insights needed. Latest video statistics, subscriber count, and a description of the youtuber are just some of the features that are provided.", image:"/pictures/dog_trial.jpg"},
     {title:"News Article Notetaker", type:"Software Engineering", paragraph:`This is an articles news taker. Allows you to store news articles
