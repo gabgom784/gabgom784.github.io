@@ -8,7 +8,7 @@ const technologies = [
   { technology: "JavaScript", experience_level: "advanced", type: "frontend", image:"./pictures/skill_pictures/JavaScript_Logo.png"},
   { technology: "PostGreSQL", experience_level: "intermediate", type:"database", image:"./pictures/skill_pictures/PostGreSQL_Logo.png"},
   { technology: "Python", experience_level: "advanced", type:"backend", image:"./pictures/skill_pictures/Python_Logo.png"},
-  { technology: "Tableu", experience_level: "beginner", type: "database", image:"./pictures/skill_pictures/Tableau_Logo.png"}
+  { technology: "Tableau", experience_level: "beginner", type: "database", image:"./pictures/skill_pictures/Tableau_Logo.png"}
 ];
 
 export default function TechStack() {
