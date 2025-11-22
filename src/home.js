@@ -2,6 +2,7 @@ import React from 'react';
 import './home.css'; // We'll add some styles
 import NavButton from './navButton';
 import PhotoCarousel from './photoCarousel';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -26,7 +27,7 @@ const Home = () => {
           learning new technologies!
         </p>
         <p>If you want to learn more about the work I do and my experience, please check out my projects and tech stack.</p>
-        <a href="#projects" className="home-btn">View My Projects</a>
+        <Link to="/projects" className="home-btn">View my Projects</Link>
       </header>
       <section className="home-intro">
       </section>
