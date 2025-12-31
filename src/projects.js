@@ -3,6 +3,9 @@ import ProjectBar from "./projectBar";
 import "./projects.css";
 
 const projects = [
+    {title: "AdventureWorks Business Report", type: "Data Science", paragraph: `This is my first Microsoft PowerBI project. It has four graphical pages which tell about the overall business sales,
+      the distribution of which countries the orders are coming from, information about sales and profitability based on a particular product, and further analysis about individual customers. All pages are fully
+      interactive and very user-friendly, utilizing common UX business practices in today's industry.`, image:"/pictures/project_pictures/AdventureWorks.png"},
     {title:"My Own Personal Website", type:"Software Engineering", paragraph: `This is a personal website that I built in order for others to learn more about me! I used React to create
       the website as it allowed me to create interactive and reusable components, which I further styled myself using advanced CSS techniques. Please look around to get to know more about me!`, image:"./pictures/project_pictures/personal_website.png"},
     {title:"Crocodile Predictions", type:"Machine Learning", paragraph:"This is a machine learning project about crocodiles", image:"/pictures/Crocodilia_montage.jpg"},
