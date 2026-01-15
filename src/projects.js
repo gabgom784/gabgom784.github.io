@@ -3,6 +3,14 @@ import ProjectBar from "./projectBar";
 import "./projects.css";
 
 const projects = [
+    {title: "Does Somebody Make over $50k?", type: "Machine Learning", paragraph: `I utilized XGBoost in order to predict whether a person makes at least $50k annually or under given certain qualities such as demographics, type of job, education level. The dataset
+      that I utilized the US Income Census from 1993 that I downloaded from Kaggle. Additionally, I performed a good amount of explatory data analysis in order to find correlations between income and certain demographic variables and additionally figure out
+      if there are any confounding factors at play.`, image:"/pictures/project_pictures/1993_income_census.png"},
+    {title: "Brest Cancer Predictor", type: "Machine Learning", paragraph: `In this project, I tried to predict whether somebody has breast cancer or not using a Breast Cancer dataset from the sklearn.datasets module.
+      The model that I used was the SVM classifier as I was mainly trying to do a binary classification. Additionally, to further increase the accuracy of my model, I utilized Grid Search to fine tune certain hyperparameters
+      in order to reduce any misclassifications. Additionally, I performed a bit of exploratory data analysis using Seaborn and Matplotlib`, image:"/pictures/project_pictures/breast_cancer.png"},
+    {title: "Fashion Item Classifier", type: "Machine Learning", paragraph: `A project relating to being able to classify a fashion item. I built a convolutional neural network using Keras and trained it on the
+      Fashion MNIST dataset.`, image:"/pictures/project_pictures/fashion_classifier.png"},
     {title: "AdventureWorks Business Report", type: "Data Science", paragraph: `This is my first Microsoft PowerBI project. It has four graphical pages which tell about the overall business sales,
       the distribution of which countries the orders are coming from, information about sales and profitability based on a particular product, and further analysis about individual customers. All pages are fully
       interactive and very user-friendly, utilizing common UX business practices in today's industry.`, image:"/pictures/project_pictures/AdventureWorks.png"},
